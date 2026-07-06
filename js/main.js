@@ -20,19 +20,12 @@ document.addEventListener('DOMContentLoaded', () => {
 /* --- STICKY HEADER --- */
 function initStickyHeader() {
   const header = document.querySelector('.header');
-  const backToTop = document.querySelector('.back-to-top');
   
   window.addEventListener('scroll', () => {
     if (window.scrollY > 50) {
       header.classList.add('scrolled');
     } else {
       header.classList.remove('scrolled');
-    }
-    
-    if (window.scrollY > 500) {
-      backToTop.classList.add('visible');
-    } else {
-      backToTop.classList.remove('visible');
     }
   });
 }
