@@ -1,0 +1,11 @@
+# Ignore macOS system files
+.DS_Store
+
+# Ignore raw downloaded Instagram HTML files and folders to keep the repository clean
+*_files/
+*.html
+!index.html
+
+# Ignore raw logo files in root (already copied to images/)
+Logo.jpg
+Nyt logo
